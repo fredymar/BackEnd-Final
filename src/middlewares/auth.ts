@@ -21,5 +21,5 @@ export const verifyToken = async (req:Express.Request, res:Express.Response, nex
     } catch (error) {
         return res.status(401).json({error})
     }
- }    
+}    
 //verificar si el token existe

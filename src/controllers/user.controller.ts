@@ -38,7 +38,6 @@ export const getUsers = async (req:Express.Request, res:Express.Response) => {
     try {
 
         const result = await userModel.find() //Usuarios existentes
-
         return res.status(200).json({result})
         
     } catch (error) {
